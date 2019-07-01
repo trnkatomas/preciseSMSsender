@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:layout_weight="0.2"
+            android:layout_gravity="start"
+            android:id="@+id/number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:layout_weight="0.6"
+            android:id="@+id/message" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scheduled Time"
+            android:layout_weight="0.2"
+            android:layout_gravity="end"
+            android:id="@+id/scheduleTime" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btOneTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btOneTime"
+        android:onClick="onetimeTimer"
+        tools:context=".WidgetAlarmManagerActivity"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_above="@id/btOneTime"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical" -->
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView" />
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+
+    <!-- <Button
+        android:id="@+id/btStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/btStart"
+        android:onClick="startRepeatingTimer"
+        tools:context=".WidgetAlarmManagerActivity"
+        android:layout_gravity="bottom"/>
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/btCancel"
+        android:onClick="cancelRepeatingTimer"
+        tools:context=".WidgetAlarmManagerActivity"
+        android:layout_gravity="bottom" /> -->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PreciseSMSsender</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_alarm_manager">SMS sender</string>
+    <string name="btCancel">Cancel Repeating Timer</string>
+    <string name="btStart">Start Repeating Timer</string>
+    <string name="btOneTime">One-time Timer</string>
+    <string name="title_activity_one_timer">Schedule SMS</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="set_date_button">Set date and time</string>
+</resources>
